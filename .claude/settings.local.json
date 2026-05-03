@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(npx --yes create-vite@latest . --template react-ts)",
+      "Read(//c/laragon/www/**)",
+      "Bash(npx --yes create-vite@latest journal --template react-ts)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(taskkill //f //im node.exe)"
+    ]
+  }
+}
