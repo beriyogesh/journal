@@ -49,4 +49,10 @@ function ProtectedRoutes() {
   )
 }
 
-export default fun
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ProtectedRoutes />
+    </BrowserRouter>
+  )
+}

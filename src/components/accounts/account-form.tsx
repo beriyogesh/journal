@@ -182,4 +182,12 @@ export function AccountForm({ account, onSubmit, onCancel }: AccountFormProps) {
         <Textarea {...register('notes')} placeholder="Any additional notes..." rows={3} />
       </div>
 
-      <div className="flex gap-
+      <div className="flex gap-3 justify-end">
+        <Button type="button" variant="outline" onClick={onCancel}>Cancel</Button>
+        <Button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Saving...' : account ? 'Update Account' : 'Create Account'}
+        </Button>
+      </div>
+    </form>
+  )
+}
